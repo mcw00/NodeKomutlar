@@ -16,20 +16,25 @@ node kurulurken kullanılan komutlara örnekler
 >nodeismi status 2>&1 | jq .SyncInfo
 ## Peer bilgisi öğrenme:
 >echo "$(quicksilverd tendermint show-node-id)@$(curl ifconfig.me):26656"
-## Delege komutu
->nodeismi tx staking delegate ValidatorAdress 'tokenAdedi''tokenİsmi' --from=Cüzdanİsmi --chain-id='test-ağı-ismi' --gas=auto
-## Redelegate komutu
->nodeismi tx staking redelegate bizimValidatorAdresimiz HedefValidatorAdresi 'tokenAdedi''tokenİsmi' --from=Cüzdanİsmi --chain-id='test-ağı-ismi' --gas=auto
+## Delege komutu:
+>nodeismi tx staking delegate ValidatorAdress 'tokenAdedi''tokenIsmi' --from=CüzdanIsmi --chain-id='test-ağı-ismi' --gas=auto
+## Redelegate komutu:
+>nodeismi tx staking redelegate bizimValidatorAdresimiz HedefValidatorAdresi 'tokenAdedi''tokenIsmi' --from=CüzdanIsmi --chain-id='test-ağı-ismi' --gas=auto
 ## Ödül Withdraw komutu
->nodeismi tx distribution withdraw-all-rewards --from=Cüzdanİsmi --chain-id='test-ağı-ismi' --gas=auto
+>nodeismi tx distribution withdraw-all-rewards --from=CüzdanIsmi --chain-id='test-ağı-ismi' --gas=auto
 ## Undelege komutu:
->nodeismi tx staking unbond valoperaddress 'tokenAdedi''tokenİsmi'  --chain-id 'test-ağı-ismi' --from Cüzdanİsmi  --gas=auto
-## jailden çıkış kodu
+>nodeismi tx staking unbond valoperaddress 'tokenAdedi''tokenIsmi'  --chain-id 'test-ağı-ismi' --from CüzdanIsmi  --gas=auto
+## Jailden çıkış komutu:
 >seid tx slashing unjail \
   --broadcast-mode=block \
   --from=Cüzdanİsmi \
   --chain-id='test-ağı-ismi' \
   --gas=auto
+## Config dosyasına erişim komutu:
+>nano /root/.nodeismi/config/config.toml
+## Oy verme komutu:
+nodeismi tx gov vote 'oylamaId' yes --from CüzdanIsmi --chain-id='test-ağı-ismi' -y
+
 
 
 

@@ -2,7 +2,7 @@
 node kurulurken kullanılan komutlara örnekler
 # Cüzdan ismini öğrenme:
 nodeismi keys list
-#Node durdurma:
+# Node durdurma:
 systemctl stop nodeismi
-#Node başlatma:
+# Node başlatma:
 systemctl restart nodeismi

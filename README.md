@@ -2,12 +2,16 @@
 node kurulurken kullanılan komutlara örnekler
 ## Cüzdan ismini öğrenme:
 ```
->nodeismi keys list
+nodeismi keys list
 ```
 ## Yeni cüzdan oluşturma komutu:
-> nodeismi keys add
+```
+nodeismi keys add
+```
 ## Mevcut cüzdanı ekleme:
-> nodeismi keys add --recover
+```
+nodeismi keys add --recover
+```
 ## Node durdurma komutu:
 >systemctl stop nodeismi
 ## Node başlatma komutu:

@@ -1,7 +1,9 @@
 # NodeKomutlar
 node kurulurken kullanılan komutlara örnekler
 ## Cüzdan ismini öğrenme:
+```
 >nodeismi keys list
+```
 ## Yeni cüzdan oluşturma komutu:
 > nodeismi keys add
 ## Mevcut cüzdanı ekleme:
